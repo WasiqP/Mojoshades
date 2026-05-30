@@ -19,7 +19,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
   return (
     <Link href={`/shop/${product.handle}`} className="group block">
       <article className="surface-card overflow-hidden rounded-2xl transition-all duration-500 group-hover:border-bone/25 group-hover:shadow-[0_30px_80px_-40px_rgba(200,16,46,0.5)]">
-        <div className="relative aspect-[4/5] overflow-hidden bg-noir">
+        <div className="relative aspect-[4/5] overflow-hidden bg-noir-soft">
           <Image
             src={product.images[0]?.url ?? ""}
             alt={product.images[0]?.altText ?? product.title}
@@ -36,12 +36,12 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
             )}
           </div>
 
-          <div className="absolute inset-x-0 bottom-0 translate-y-4 bg-gradient-to-t from-noir via-noir/70 to-transparent p-4 opacity-0 transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-100">
+          <div className="absolute inset-x-0 bottom-0 translate-y-4 bg-gradient-to-t from-bone/90 via-bone/50 to-transparent p-4 opacity-0 transition-all duration-400 group-hover:translate-y-0 group-hover:opacity-100">
             <div className="flex items-center gap-2">
               {product.variants.map((v) => (
                 <ShadeSwatch key={v.id} hex={v.shadeHex} size="sm" />
               ))}
-              <span className="eyebrow ml-auto text-bone/70">View</span>
+              <span className="eyebrow ml-auto text-white/80">View</span>
             </div>
           </div>
         </div>

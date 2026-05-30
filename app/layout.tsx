@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Fraunces, Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -19,6 +19,12 @@ const inter = Inter({
   weight: ["300", "400", "500", "600"],
 });
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["700", "800"],
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://mojoshades.com"),
   title: {
@@ -33,7 +39,7 @@ export const metadata: Metadata = {
       "A lipstick house for those who refuse to blend in. Editorial color, made to be worn loud.",
     type: "website",
     siteName: "Mojoshades",
-    images: ["/images/hero-lips.png"],
+    images: ["/images/prod-cherry-bomb.png"],
   },
 };
 
@@ -45,7 +51,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${inter.variable}`}
+      className={`${fraunces.variable} ${inter.variable} ${poppins.variable}`}
     >
       <body className="font-body antialiased">
         <SmoothScrollProvider>

@@ -16,11 +16,11 @@ export function Button({
 }: ButtonProps) {
   const variants = {
     primary:
-      "btn-shine bg-blood text-bone hover:bg-blood-bright shadow-[0_8px_30px_-8px_rgba(200,16,46,0.7)]",
+      "btn-shine bg-blood text-white hover:bg-blood-bright shadow-[0_8px_30px_-8px_rgba(200,16,46,0.35)]",
     chrome:
-      "btn-shine bg-bone text-noir hover:bg-white",
+      "btn-shine bg-bone text-white hover:bg-bone/90",
     outline:
-      "border border-bone/30 bg-transparent text-bone hover:border-bone hover:bg-bone/5",
+      "border border-bone/20 bg-transparent text-bone hover:border-bone hover:bg-bone/5",
     ghost: "bg-transparent text-bone hover:text-blood-bright",
   };
 

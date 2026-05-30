@@ -59,16 +59,16 @@ export function EditorialBanner() {
           sizes="100vw"
         />
       </div>
-      <div className="absolute inset-0 bg-gradient-to-r from-noir via-noir/60 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-t from-noir via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-r from-bone/80 via-bone/40 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-bone/60 via-transparent to-transparent" />
 
       <div className="relative z-10 mx-auto flex min-h-[90svh] max-w-7xl items-center px-6">
         <div ref={contentRef} className="max-w-xl">
           <p className="eyebrow mb-5 text-blood-bright">The Signature Edit</p>
-          <h2 className="font-display display-xl font-light text-bone">
+          <h2 className="font-display display-xl font-light text-white">
             Colour worth <span className="italic">obsessing</span> over.
           </h2>
-          <p className="font-body mt-6 max-w-md leading-relaxed text-ash">
+          <p className="font-body mt-6 max-w-md leading-relaxed text-white/80">
             Three icon shades, one molten philosophy. Every Mojoshades bullet is
             built to be reached for again, and again, and again.
           </p>

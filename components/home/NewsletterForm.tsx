@@ -14,7 +14,7 @@ export function NewsletterForm() {
   };
 
   return (
-    <section className="px-6 py-28 md:py-36">
+    <section className="px-6 py-28 md:py-36" id="newsletter">
       <div className="mx-auto max-w-2xl text-center">
         <ScrollReveal y={30}>
           <p className="eyebrow mb-4 text-blood-bright">The List</p>
@@ -46,7 +46,7 @@ export function NewsletterForm() {
               />
               <button
                 type="submit"
-                className="btn-shine flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-blood text-bone transition-colors hover:bg-blood-bright"
+                className="btn-shine flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-blood text-white transition-colors hover:bg-blood-bright"
                 aria-label="Subscribe"
               >
                 <ArrowRight className="h-4 w-4" strokeWidth={1.5} />

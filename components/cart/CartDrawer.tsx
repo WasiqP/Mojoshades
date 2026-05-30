@@ -19,7 +19,7 @@ export function CartDrawer() {
     <>
       <div
         className={cn(
-          "fixed inset-0 z-[60] bg-noir/70 backdrop-blur-sm transition-opacity duration-300",
+          "fixed inset-0 z-[60] bg-bone/20 backdrop-blur-sm transition-opacity duration-300",
           isOpen ? "opacity-100" : "pointer-events-none opacity-0"
         )}
         onClick={closeCart}
@@ -65,7 +65,7 @@ export function CartDrawer() {
                   key={item.merchandiseId}
                   className="surface-card flex gap-4 rounded-xl p-3"
                 >
-                  <div className="relative h-24 w-20 shrink-0 overflow-hidden rounded-lg bg-noir">
+                  <div className="relative h-24 w-20 shrink-0 overflow-hidden rounded-lg bg-noir-soft">
                     <Image
                       src={item.image}
                       alt={item.title}

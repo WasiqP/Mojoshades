@@ -69,7 +69,7 @@ export function FilterBar({
               className={cn(
                 "font-body rounded-full px-3.5 py-1.5 text-[11px] uppercase tracking-[0.15em] transition-colors",
                 undertone === u
-                  ? "bg-blood text-bone"
+                  ? "bg-blood text-white"
                   : "text-ash hover:text-bone"
               )}
             >
@@ -82,10 +82,10 @@ export function FilterBar({
           <select
             value={sort}
             onChange={(e) => onSortChange(e.target.value as SortOption)}
-            className="font-body rounded-full border border-bone/15 bg-noir px-4 py-1.5 text-[11px] uppercase tracking-[0.15em] text-bone outline-none"
+            className="font-body rounded-full border border-bone/15 bg-noir-card px-4 py-1.5 text-[11px] uppercase tracking-[0.15em] text-bone outline-none"
           >
             {sortOptions.map((opt) => (
-              <option key={opt.value} value={opt.value} className="bg-noir">
+              <option key={opt.value} value={opt.value} className="bg-noir-card">
                 {opt.label}
               </option>
             ))}

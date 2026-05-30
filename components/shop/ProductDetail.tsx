@@ -52,7 +52,7 @@ export function ProductDetail({ product, related }: ProductDetailProps) {
 
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
         <ScrollReveal y={50}>
-          <div className="surface-card relative aspect-[4/5] overflow-hidden rounded-3xl bg-noir">
+          <div className="surface-card relative aspect-[4/5] overflow-hidden rounded-3xl bg-noir-soft">
             <Image
               src={product.images[0]?.url ?? ""}
               alt={product.images[0]?.altText ?? product.title}

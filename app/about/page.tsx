@@ -55,12 +55,12 @@ export default function AboutPage() {
           className="object-cover object-right"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-noir via-noir/50 to-noir/20" />
-        <div className="absolute inset-0 bg-gradient-to-r from-noir/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-bone/90 via-bone/40 to-bone/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-bone/70 to-transparent" />
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pb-20 pt-32">
           <ScrollReveal y={30}>
             <p className="eyebrow mb-5 text-blood-bright">The House</p>
-            <h1 className="font-display display-mega max-w-3xl font-light text-bone">
+            <h1 className="font-display display-mega max-w-3xl font-light text-white">
               Born to be<br />
               <span className="italic">worn loud.</span>
             </h1>
@@ -153,7 +153,7 @@ export default function AboutPage() {
           className="object-cover opacity-40"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-noir via-noir/70 to-noir" />
+        <div className="absolute inset-0 bg-gradient-to-t from-noir via-noir/90 to-noir/70" />
         <div className="relative z-10 mx-auto max-w-2xl text-center">
           <ScrollReveal y={30}>
             <h2 className="font-display display-lg font-light text-bone">

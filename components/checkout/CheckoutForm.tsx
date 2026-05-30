@@ -28,7 +28,7 @@ interface CheckoutFormProps {
 }
 
 const inputClass =
-  "font-body w-full rounded-xl border border-bone/15 bg-noir px-4 py-3.5 text-sm text-bone placeholder:text-ash-dim outline-none transition-colors focus:border-blood";
+  "font-body w-full rounded-xl border border-bone/15 bg-noir-card px-4 py-3.5 text-sm text-bone placeholder:text-ash-dim outline-none transition-colors focus:border-blood";
 
 function FieldError({ message }: { message?: string }) {
   if (!message) return null;

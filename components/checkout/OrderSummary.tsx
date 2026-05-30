@@ -19,7 +19,7 @@ export function OrderSummary() {
       <ul className="mb-6 space-y-4">
         {items.map((item) => (
           <li key={item.merchandiseId} className="flex gap-3">
-            <div className="relative h-20 w-16 shrink-0 overflow-hidden rounded-lg bg-noir">
+            <div className="relative h-20 w-16 shrink-0 overflow-hidden rounded-lg bg-noir-soft">
               <Image
                 src={item.image}
                 alt={item.title}
@@ -27,7 +27,7 @@ export function OrderSummary() {
                 className="object-cover"
                 sizes="64px"
               />
-              <span className="absolute -right-1.5 -top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-blood text-[10px] font-semibold text-bone">
+              <span className="absolute -right-1.5 -top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-blood text-[10px] font-semibold text-white">
                 {item.quantity}
               </span>
             </div>
